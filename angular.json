@@ -28,9 +28,39 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/bootstrap-reboot.min.css",
+              "src/assets/vendors/bootstrap-selector/css/bootstrap-select.min.css",
+              "src/assets/vendors/themify-icon/themify-icons.css",
+              "src/assets/vendors/flaticon/flaticon.css",
+              "src/assets/vendors/animation/animate.css",
+              "src/assets/vendors/owl-carousel/assets/owl.carousel.min.css",
+              "src/assets/vendors/magnify-pop/magnific-popup.css",
+              "src/assets/vendors/nice-select/nice-select.css",
+              "src/assets/vendors/font-awesome/css/all.css",
+              "src/assets/vendors/elagent/style.css",
+              "src/assets/vendors/scroll/jquery.mCustomScrollbar.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/rtl.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.2.1.min.js",
+              "src/assets/js/propper.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/vendors/wow/wow.min.js",
+              "src/assets/vendors/sckroller/jquery.parallax-scroll.js",
+              "src/assets/vendors/owl-carousel/owl.carousel.min.js",
+              "src/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js",
+              "src/assets/vendors/isotope/isotope-min.js",
+              "src/assets/vendors/magnify-pop/jquery.magnific-popup.min.js",
+              "src/assets/vendors/bootstrap-selector/js/bootstrap-select.min.js",
+              "src/assets/vendors/nice-select/jquery.nice-select.min.js",
+              "src/assets/vendors/scroll/jquery.mCustomScrollbar.concat.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/main-rtl.js"
+            ]
           },
           "configurations": {
             "production": {
