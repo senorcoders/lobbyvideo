@@ -32,4 +32,8 @@ export class AuthenticationService {
       return false;
     }
   }
+
+  save(endpoint, json){
+    return this.http.post(endpoint, json);
+  }
 }

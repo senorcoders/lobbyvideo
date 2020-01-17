@@ -1,0 +1,70 @@
+<section class="breadcrumb_area">
+    <img class="breadcrumb_shap" src="../../assets/img/breadcrumb/banner_bg.png" alt="">
+    <div class="container">
+        <div class="breadcrumb_content text-center">
+            <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Register</h1>
+            <p class="f_400 w_color f_size_16 l_height26">Why I say old chap that is spiffing off his nut arse pear shaped plastered<br> Jeffrey bodge barney some dodgy.!!</p>
+        </div>
+    </div>
+</section>
+
+<section class="login_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="login_info">
+                    <h2 class="f_p f_700 f_size_40 t_color3 mb_20">Register now</h2>
+                    <p class="f_p f_400 f_size_15">Welcome! Please confirm that your are visiting <br><a href="#">https://www.saasland.com</a></p>
+                    <form  class="login-form mt_60" [formGroup]="registerForm" (ngSubmit)="register()">
+                        <div class="invalid-feedback" style="display: block; text-align: center;
+      margin-bottom: 20px;" *ngIf="wrongData">An error occurred. Try again.</div>
+                            <div class="form-group text_box">
+                                <label class="f_p text_c f_400">Full Name</label>
+                                <input type="text" placeholder="Your Name" formControlName="fullName" class="form-control"
+                                [ngClass]="{'is-invalid':registerForm.get('fullName').invalid && registerForm.get('fullName').touched}">
+                                <div class="invalid-feedback  text-left" *ngIf="registerForm.get('fullName').hasError('required')">
+                                    Name is invalid.</div>
+                            </div>
+                        <div class="form-group text_box">
+                            <label class="f_p text_c f_400">Email</label>
+                            <input type="text" placeholder="Your Email" formControlName="email" class="form-control"
+                            [ngClass]="{'is-invalid':registerForm.get('email').invalid && registerForm.get('email').touched}">
+                            <div class="invalid-feedback text-left"
+                                *ngIf="registerForm.get('email').hasError('email') && !registerForm.get('email').hasError('required')">
+                                Email is invalid</div>
+                        </div>
+                        <div class="form-group text_box">
+                            <label class="f_p text_c f_400">Password</label>
+                            <input type="password" placeholder="******" formControlName="password" class="form-control"
+                            [ngClass]="{'is-invalid':registerForm.get('password').invalid && registerForm.get('password').touched}">
+                            <div class="invalid-feedback  text-left" *ngIf="registerForm.get('password').hasError('required')">
+                                Password is invalid.</div>
+                                <div class="invalid-feedback text-left" *ngIf="registerForm.get('password').errors?.pattern">
+                                    Password should have at least 8 characters, one uppercase and one symbool
+                                </div>
+
+                        </div>
+
+                        <div class="form-group text_box">
+                            <label class="f_p text_c f_400">Confirm Password</label>
+                            <input type="password" placeholder="******" formControlName="confirmPassword" class="form-control"
+                            [ngClass]="{'is-invalid':registerForm.get('confirmPassword').invalid && registerForm.get('confirmPassword').touched}">
+                            <div class="invalid-feedback  text-left" *ngIf="registerForm.get('confirmPassword').hasError('required')">
+                                Password is invalid.</div>
+                                <div class="invalid-feedback" *ngIf="registerForm.controls.confirmPassword.errors?.MatchPassword"> Passwords not match</div>
+
+                        </div>
+                        
+                        <button type="submit" class="btn_three">{{loginText}}</button>
+                       
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <div class="login_img">
+                    <img src="../../assets/img/login_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
