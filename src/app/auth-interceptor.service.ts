@@ -24,9 +24,7 @@ export class AuthInterceptorService  implements HttpInterceptor {
           event = req.clone({
               url: AuthInterceptorService.url + req.url,
               setHeaders: {
-                  'token': `${token}`,
-                  'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
-              }
+                  'token': `${token}`              }
           });
       } else {
           event = req.clone({

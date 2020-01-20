@@ -34,6 +34,7 @@ export class AuthenticationService {
   }
 
   save(endpoint, json){
+    console.log("Data to send", json);
     return this.http.post(endpoint, json);
   }
 }

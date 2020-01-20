@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: 'http://lobbyvideoapi.senorcoders.com/'
+  apiURL: 'https://lobbyvideoapi.senorcoders.com/'
 };
 
 /*
