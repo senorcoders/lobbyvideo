@@ -77,9 +77,17 @@ export class RegisterComponent implements OnInit {
       this.auth.save('api/v1/register', this.registerForm.value).subscribe(
         data => {
           console.log("Reg Res", data);
-          this.auth.setLoginData(data);
-          this.isLoginService.setLogin(true)
-          this.redirectHome();
+          if(data.hasOwnProperty('message')){
+            this.showError("Already an user");
+          this.isValid = false;
+          this.loginText = 'Register';
+
+          }else{
+            this.auth.setLoginData(data);
+            this.isLoginService.setLogin(true)
+            this.redirectHome();
+          }
+      
         
         },
         error => {
@@ -99,7 +107,7 @@ export class RegisterComponent implements OnInit {
     redirectHome() {
       if (this.auth.isLogged()) {
   
-        this.router.navigate(["/"]);
+        this.router.navigate(["/dashboard"]);
   
         this.isValid = false;
         this.loginText = 'REGISTER';

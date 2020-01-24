@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-app-menu',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-menu.component.sass']
 })
 export class AppMenuComponent implements OnInit {
+  isLogged = false;
 
-  constructor() { }
+  constructor(private isLoggedSr: AuthenticationService) { }
 
   ngOnInit() {
+
+
+
+    if(this.isLoggedSr.isLogged()){
+      this.isLogged = true;
+    }
   }
 
 }

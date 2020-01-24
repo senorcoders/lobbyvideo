@@ -18,7 +18,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav menu w_menu ml-auto">
+                        <ul class="navbar-nav menu w_menu ml-auto" *ngIf="!isLogged">
                             <li class="nav-item dropdown submenu mega_menu mega_menu_two active">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Home
@@ -37,6 +37,23 @@
                                 </a>
                                 
                             </li>
+                          
+                        </ul>
+
+                        <ul class="navbar-nav menu w_menu ml-auto" *ngIf="isLogged">
+                            <li class="nav-item dropdown submenu mega_menu mega_menu_two active">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item  submenu mega_menu mega_menu_two ">
+                                <a class="nav-link dropdown-toggle" routerLink="/dashboard" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dashboard
+                                </a>
+                                
+                            </li>
+                           
                           
                         </ul>
                       

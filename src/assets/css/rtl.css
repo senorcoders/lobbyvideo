@@ -158,6 +158,7 @@ ul {
 .text_box textarea,
 .text_box input[type="password"] {
     padding-right: 30px;
+    text-align: left;
 }
 
 .faq_content .tab-pane .card .card-header .btn {
@@ -748,6 +749,7 @@ ul {
 .login_area .login_info {
     padding-right: 0;
     padding-left: 100px;
+    text-align: left;
 }
 
 .portfolio_details_info.pr_50 {
