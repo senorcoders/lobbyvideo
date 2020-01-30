@@ -10,7 +10,7 @@ export class AuthenticationService {
 
   login(user) {
     let body = { "email": user.email, "password": user.password };
-    return this.http.put('api/v1/login ', JSON.stringify(body));
+    return this.http.post('api/v1/login ', JSON.stringify(body));
   }
   setLoginData(data) {
     data = JSON.stringify(data);
