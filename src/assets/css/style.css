@@ -19266,6 +19266,16 @@ a .h_head:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 992px){
+  .pos_banner_area{
+    background-image: url('../img/Home-color/background_2.jpg');
+  }
+
+  .pos_banner_area video{
+    display: none;
+  }
+}
+
 .pos_slider {
   position: absolute;
   top: 0;
