@@ -6,6 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoggedinService } from './loggedin.service';
 import { EnterCoeComponent } from './enter-coe/enter-coe.component';
+import { MessageComponent } from './message/message.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,7 @@ const routes: Routes = [
 
   },
   { 
-    path: 'dashboard', component: EnterCoeComponent
+    path: 'dashboard', component: DashboardComponent
 
   },
   { 
@@ -30,7 +31,7 @@ const routes: Routes = [
 
   },
   { 
-    path: 'set-video', component: DashboardComponent
+    path: 'set-video', component: MessageComponent
 
   }
 ];
