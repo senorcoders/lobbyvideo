@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoggedinService } from './loggedin.service';
+import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,15 @@ const routes: Routes = [
 
   },
   { 
-    path: 'dashboard', component: DashboardComponent
+    path: 'dashboard', component: EnterCoeComponent
+
+  },
+  { 
+    path: 'enter-code', component: EnterCoeComponent
+
+  },
+  { 
+    path: 'set-video', component: DashboardComponent
 
   }
 ];

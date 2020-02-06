@@ -1,15 +1,17 @@
+<section class="breadcrumb_area code-section">
+    <img class="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt="">
+    <div class="container">
+        <div class="breadcrumb_content text-center">
+            <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Go back to your Amazon or  Roku app and click ready button</h1>
+            
+                   
+            </div>
+    </div>
+</section>
 <section class="portfolio_area sec_pad bg_color">
     <div class="container">
         <div class="row">
-            <form class="form-inline">
-                <label class="sr-only" for="inlineFormInputName2">Input code</label>
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="6 digits">
-        
-              
-               
-              
-                <button type="submit" class="btn btn-primary mb-2">Send code</button>
-              </form>
+         
               <br><br><br>
         </div>
         <div class="row portfolio_gallery mb-50" id="work-portfolio">
@@ -103,4 +105,21 @@
             </div>
         </div>
     </div>
+<<section class="breadcrumb_area code-section">
+    <img class="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt="">
+    <div class="container">
+        <div class="breadcrumb_content text-center">
+            <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Enter Code</h1>
+            <form [formGroup]="codeForm" (ngSubmit)="send()" class="login-form mt_60">
+                <div class="form-group text_box" style="margin-bottom: 0;">
+                    <input type="text" placeholder="Type here" formControlName="code">
+                </div>
+               
+                <button type="submit" class="btn_three" style="margin-top: 5px;">SEND</button>
+               
+            </form>
+                   
+            </div>
+    </div>
 </section>
+    /section>

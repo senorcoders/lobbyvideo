@@ -37,4 +37,14 @@ export class AuthenticationService {
     console.log("Data to send", json);
     return this.http.post(endpoint, json);
   }
+
+  send(endpoint, json){
+    console.log("Data to send", json);
+    return this.http.post(endpoint, json, {responseType: 'text'});
+  }
+
+  get(endpoint){
+    return this.http.get(endpoint);
+
+  }
 }
