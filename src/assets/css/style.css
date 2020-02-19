@@ -1016,6 +1016,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   left: 0;
   z-index: 20;
   top: 0;
+  background-color: #000;
 }
 
 .menu_one {
