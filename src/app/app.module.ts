@@ -14,6 +14,8 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 import { MessageComponent } from './message/message.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { MessageComponent } from './message/message.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot() // ToastrModule added
+
     ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
