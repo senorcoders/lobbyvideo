@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoggedinService } from './loggedin.service';
 import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 import { MessageComponent } from './message/message.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,9 @@ const routes: Routes = [
   { 
     path: 'set-video', component: MessageComponent
 
+  },
+  {
+    path: 'payment', component: PaymentComponent
   }
 ];
 

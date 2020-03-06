@@ -107,7 +107,7 @@ export class RegisterComponent implements OnInit {
     redirectHome() {
       if (this.auth.isLogged()) {
   
-        this.router.navigate(["/dashboard"]);
+        this.router.navigate(["/payment"]);
   
         this.isValid = false;
         this.loginText = 'REGISTER';

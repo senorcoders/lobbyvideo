@@ -16,6 +16,7 @@ import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 import { MessageComponent } from './message/message.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     DashboardComponent,
     EnterCoeComponent,
-    MessageComponent
+    MessageComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
