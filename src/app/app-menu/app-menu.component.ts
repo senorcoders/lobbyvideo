@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
 import { Router } from '@angular/router';
+import { IsLoginService } from '../is-login.service';
 
 @Component({
   selector: 'app-app-menu',
@@ -10,19 +11,23 @@ import { Router } from '@angular/router';
 export class AppMenuComponent implements OnInit {
   isLogged = false;
 
-  constructor(private isLoggedSr: AuthenticationService,
+  constructor(private isLoggedSr: IsLoginService,
     private router: Router) { }
 
   ngOnInit() {
 
+    this.isLoggedSr.isLogged.subscribe((val: boolean) => {
+      this.isLogged = val;
+    });
 
-
-    if(this.isLoggedSr.isLogged()){
-      this.isLogged = true;
-    }
+    // if(this.isLoggedSr.isLogged()){
+    //   this.isLogged = true;
+    // }
   }
 
-  logout(){
+  async logout(){
+     await this.isLoggedSr.setLogin(false);
+
     localStorage.removeItem('login');
     this.router.navigate(["/"]);
 
