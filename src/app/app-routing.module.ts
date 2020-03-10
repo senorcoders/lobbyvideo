@@ -25,22 +25,29 @@ const routes: Routes = [
 
   },
   { 
-    path: 'dashboard', component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent,
+    canActivate: [LoggedinService]
 
   },
   { 
-    path: 'enter-code', component: EnterCoeComponent
+    path: 'enter-code', component: EnterCoeComponent,
+    canActivate: [LoggedinService]
 
   },
   { 
-    path: 'set-video', component: MessageComponent
+    path: 'set-video', component: MessageComponent,
+    canActivate: [LoggedinService]
 
   },
   {
-    path: 'payment', component: PaymentComponent
+    path: 'payment', component: PaymentComponent,
+    canActivate: [LoggedinService]
+
   },
   {
-    path: 'thanks', component: ThanksComponent
+    path: 'thanks', component: ThanksComponent,
+    canActivate: [LoggedinService]
+
   }
 ];
 
