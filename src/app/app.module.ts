@@ -18,6 +18,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ThanksComponent } from './thanks/thanks.component';
     EnterCoeComponent,
     MessageComponent,
     PaymentComponent,
-    ThanksComponent
+    ThanksComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
