@@ -12,7 +12,7 @@ export class AppMenuComponent implements OnInit {
   isLogged = false;
 
   constructor(private isLoggedSr: IsLoginService,
-    private router: Router) { }
+    private router: Router, private auth: AuthenticationService) { }
 
   ngOnInit() {
 
@@ -20,9 +20,11 @@ export class AppMenuComponent implements OnInit {
       this.isLogged = val;
     });
 
-    // if(this.isLoggedSr.isLogged()){
-    //   this.isLogged = true;
-    // }
+
+
+    if(this.auth.isLogged()){
+      this.isLoggedSr.setLogin(true);
+    }
   }
 
   async logout(){

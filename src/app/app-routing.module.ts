@@ -8,6 +8,8 @@ import { LoggedinService } from './loggedin.service';
 import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 import { MessageComponent } from './message/message.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ThanksComponent } from './thanks/thanks.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -24,19 +26,34 @@ const routes: Routes = [
 
   },
   { 
-    path: 'dashboard', component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent,
+    canActivate: [LoggedinService]
 
   },
   { 
-    path: 'enter-code', component: EnterCoeComponent
+    path: 'enter-code', component: EnterCoeComponent,
+    canActivate: [LoggedinService]
 
   },
   { 
-    path: 'set-video', component: MessageComponent
+    path: 'set-video', component: MessageComponent,
+    canActivate: [LoggedinService]
 
   },
   {
-    path: 'payment', component: PaymentComponent
+    path: 'payment', component: PaymentComponent,
+    canActivate: [LoggedinService]
+
+  },
+  {
+    path: 'thanks', component: ThanksComponent,
+    canActivate: [LoggedinService]
+
+  },
+  {
+    path: 'contact', component: ContactComponent,
+    canActivate: [LoggedinService]
+
   }
 ];
 

@@ -9,10 +9,9 @@ export class LoggedinService {
 
   constructor(private autorizacionService:IsLoginService,private router: Router) { }
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot){
-  	let isLogged=localStorage.getItem('login');
-  	if (isLogged) {
-	     this.router.navigate(['/dashboard']);
-	    return false;
+	let isLogged=this.autorizacionService.isLogged.value;
+	if (isLogged) {
+	    return true;
 	 
 	}
 	else{
