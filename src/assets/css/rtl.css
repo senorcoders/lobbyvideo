@@ -913,8 +913,8 @@ ul {
     margin-left: 13px;
 }
 .ticket_item + .ticket_item{
-    margin-left: 0;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 .pos_developer_product_area .developer_product_content{
     padding-left: 0;
