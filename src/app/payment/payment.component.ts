@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentComponent implements OnInit {
   handler:any = null;
 
-  constructor() { }
+  constructor( private router: Router) { }
 
  
 
@@ -32,6 +33,7 @@ export class PaymentComponent implements OnInit {
 
 pay(amount) {    
  
+  let that = this;
   var handler = (<any>window).StripeCheckout.configure({
     key: 'pk_test_c6dJNx2AZjTBCKVapblc4b52',
     locale: 'auto',
@@ -40,6 +42,8 @@ pay(amount) {
       // Get the token ID to your server-side code for use.
       console.log("Token created", token)
       // alert('Token Created!!');
+      that.router.navigate(["/thanks"]);
+
     }
   });
 

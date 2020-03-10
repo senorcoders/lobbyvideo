@@ -8,6 +8,7 @@ import { LoggedinService } from './loggedin.service';
 import { EnterCoeComponent } from './enter-coe/enter-coe.component';
 import { MessageComponent } from './message/message.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,9 @@ const routes: Routes = [
   },
   {
     path: 'payment', component: PaymentComponent
+  },
+  {
+    path: 'thanks', component: ThanksComponent
   }
 ];
 

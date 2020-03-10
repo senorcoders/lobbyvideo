@@ -17,6 +17,7 @@ import { MessageComponent } from './message/message.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaymentComponent } from './payment/payment.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PaymentComponent } from './payment/payment.component';
     DashboardComponent,
     EnterCoeComponent,
     MessageComponent,
-    PaymentComponent
+    PaymentComponent,
+    ThanksComponent
   ],
   imports: [
     BrowserModule,
