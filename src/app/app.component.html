@@ -1,5 +1,5 @@
 
 <app-app-menu></app-app-menu>
-<router-outlet  #outlet></router-outlet>
+<router-outlet (activate)="onActivate($event, outlet)"  #outlet></router-outlet>
 <app-footer></app-footer>
 

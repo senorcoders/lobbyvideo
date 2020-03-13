@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'lobbyvideo';
 
+  onActivate(e, outlet) {
+    outlet.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }
+
 }
