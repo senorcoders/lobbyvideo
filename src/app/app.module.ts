@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactComponent } from './contact/contact.component';
     MessageComponent,
     PaymentComponent,
     ThanksComponent,
-    ContactComponent
+    ContactComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
