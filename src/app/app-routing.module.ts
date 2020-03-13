@@ -10,6 +10,7 @@ import { MessageComponent } from './message/message.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
   },
   { 
     path: 'login', component: LoginComponent,
+
+  },
+  { 
+    path: 'faq', component: FaqComponent,
 
   },
   { 
