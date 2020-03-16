@@ -25016,3 +25016,16 @@ a .h_head:hover {
   padding: 235px 0px 125px;
   overflow: hidden;
 }
+
+
+@media screen and (min-width: 1950px){
+ .video-area{
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%,-50%) !important;
+  -ms-transform: translate(-50%,-50%) !important;
+  transform: translate(-50%,-50%) !important;
+     }
+     
+    
+}
