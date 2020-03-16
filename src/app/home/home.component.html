@@ -5,7 +5,7 @@
                 <div class="video-container bn-1" style="width: 100%;">
                 
                     <div class="filter"></div>
-                        <video width="100%" height="auto" autoplay="" muted="" loop="" style="background:transparent no-repeat 0 0; background-size:cover;">
+                        <video width="100%" height="auto" autoplay="" [muted]="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;">
                                 <source src="../../assets/videos/video.ogv" type="video/ogg"> 
                         </video>
                  </div>
@@ -18,7 +18,7 @@
                         <div class="pos_banner_text text-center">
                             <h6>Welcome To Patient Soothe</h6>
                             <h2>A relaxing, changeable lobby aquarium that does not need food</h2>
-                            <a class="about_btn btn_hover" routerLink="/register">Register Now</a>
+                            <a class="about_btn btn_hover" routerLink="/register">Get it Now</a>
                         </div>
                     </div>
                   </div>
@@ -26,9 +26,10 @@
                     <div class="container" style="z-index: 99999;">
                         <div class="pos_banner_text text-center">
                             <h6>Welcome To Patient Soothe</h6>
-                            <h2>Video fish are more therapeutic than a real aquarium – National Institute of Health (NIH)
+                            <h2>Video fish are more therapeutic than a real aquarium
                             </h2>
-                            <a class="about_btn btn_hover" routerLink="/register">Register Now</a>
+                            <h6>National Institute of Health (NIH)</h6>
+                            <a class="about_btn btn_hover" routerLink="/register">Get it Now</a>
                         </div>
                     </div>
                   </div>
@@ -38,7 +39,7 @@
                             <h6>Welcome To Patient Soothe</h6>
                             <h2>Patient Soothe is cheaper and needs no maintenance
                             </h2>
-                            <a class="about_btn btn_hover" routerLink="/register">Register Now</a>
+                            <a class="about_btn btn_hover" routerLink="/register">Get it Now</a>
                         </div>
                     </div>
                   </div>
@@ -97,17 +98,17 @@
                 <div class="row pos_service_info">
                     <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item">
-                            <img src="../../assets/img/pos/laptop.png" alt="">
+                            <img src="../../assets/img/download.png" alt="">
                             <a href="#"><h4 class="h_head">Takes seconds to install in your lobby and operatories
                             </h4></a>
-                            <p>Patient Soothe sets up in moments, is easy to install and use, and is cost effective with no maintenance whatsoever.
+                            <p>Patient Soothe sets up in moments, is easy to install and use, and is cost effective with no maintenance.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item">
-                            <img src="../../assets/img/pos/statistics.png" alt="">
-                            <a href="#"><h4 class="h_head">Patient Soothe was created for lobby’s and office of dentist and doctors
+                            <img src="../../assets/img/doctor.png" alt="">
+                            <a href="#"><h4 class="h_head">Patient Soothe was created for lobby’s and office of dentists and doctors
                             </h4></a>
 <p>People are fecsinated and become almost hypnotizedby fish in an aquarium.  This practice is terrififc for calming patients.
     <br>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item">
-                            <img src="../../assets/img/pos/credit-card.png" alt="">
+                            <img src="../../assets/img/price.png" alt="">
                             <a href="#"><h4 class="h_head">Pricing</h4></a>
                                 <ul>
                                     <li>$39 per month for 1 screen of 80” or less </li>
@@ -153,7 +154,7 @@
                     <div class="col-lg-6">
                         <div class="tab_img_info">
                             <div class="tab_img active" id="tab_one">
-                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" muted="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
+                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" [muted]="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
                                 poster="../../assets/img/fish1.jpg">
                                     <source src="https://api.patientsoothe.com/images/seahorse-sm.ogv" type="video/ogg"> 
                             </video>
@@ -190,16 +191,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2"></div>
                     <div class="col-lg-4 d-flex align-items-center">
-                        <div class="developer_product_content">
-                           <ul class="text-left">
-                               <li>Great for patients</li>
-                               <li>Easy to install and use</li>
-                               <li>Hi-def Video made specifically for this purpose</li>
-                               <li>Maximize therapeutic benefit</li>
-                           </ul>
-                        </div>
+                            <div class="pos_features_content">
+                                <!-- <h2>Yeni nesil bulut<br> tabanli POS</h2> -->
+                                <div class="media h_features_item">
+                                    <i class="icon_lightbulb_alt"></i>
+                                    <div class="media-body">
+                                        <h3 class="h_head">Great for patients
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media h_features_item">
+                                    <i class="icon_lightbulb_alt orange"></i>
+                                    <div class="media-body">
+                                        <h3 class="h_head">Easy to install and use                      </h3>
+                                    </div>
+                                </div>
+                                <div class="media h_features_item">
+                                    <i class="icon_lightbulb_alt"></i>
+                                    <div class="media-body">
+                                        <h3 class="h_head">Hi-def Video made specifically for this purpose
+                                        </h3>
+                                    </div>
+                                </div>
+    
+                                <div class="media h_features_item">
+                                    <i class="icon_lightbulb_alt orange"></i>
+                                    <div class="media-body">
+                                        <h3 class="h_head">Maximize therapeutic benefit
+    
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                          
                     </div>
                 </div>
             </div>
@@ -211,7 +236,7 @@
                         <div class="pos_features_img">
                             <div class="shape_img"></div>
                             <div class="shap_img">
-                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" muted="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
+                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" [muted]="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
                                 poster="../../assets/img/grey-and-yellow-salt-fish-60090.jpg">
                                     <source src="https://api.patientsoothe.com/images/coral-sm.ogv" type="video/ogg"> 
                             </video>
@@ -261,7 +286,7 @@
                         <div class="pos_features_img img_left">
                             <div class="shape_img yellow"></div>
                             <div class="shap_img yellow">
-                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" muted="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
+                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" [muted]="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
                                 poster="../../assets/img/shallow-focus-photography-of-school-of-fish-2248916.jpg">
                                     <source src="https://api.patientsoothe.com/images/bottom-sm.ogv" type="video/ogg"> 
                             </video>
@@ -293,8 +318,10 @@
                         <div class="pos_features_img">
                             <div class="shape_img blue"></div>
                             <div class="shap_img blue">
-                                <img src="../../assets/img/underwater-photography-of-brown-sea-turtle-668867.jpg" alt="features">
-                            </div>
+                                <video class="img-fluid wow fadeInRight patient-video" width="100%" data-wow-delay="0.4s" height="auto" autoplay="" [muted]="true" loop="" style="background:transparent no-repeat 0 0; background-size:cover;"
+                                poster="../../assets/img/fish1.jpg">
+                                    <source src="https://api.patientsoothe.com/images/seahorse-sm.ogv" type="video/ogg"> 
+                            </video>                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -346,7 +373,7 @@
                 <div class="pos_action_content text-center">
                     <h2>Ready to start?</h2>
                     <p>Create your own lobby video today.</p>
-                    <a routerLink="/register" class="pos_btn">Register</a>
+                    <a routerLink="/register" class="pos_btn">Get started</a>
                 </div>
             </div>
         </section>
