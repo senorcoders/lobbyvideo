@@ -18132,7 +18132,7 @@ a .h_head:hover {
 
 .pos_footer_area {
   background: #413c85;
-  padding-bottom: 0;
+  padding-bottom: 50px;
   padding-top: 120px;
   position: relative;
   z-index: 0 !important;
