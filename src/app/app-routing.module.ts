@@ -11,6 +11,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { ScenesComponent } from './scenes/scenes.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
   },
   { 
     path: 'faq', component: FaqComponent,
+
+  },
+  { 
+    path: 'scenes', component: ScenesComponent,
 
   },
   { 

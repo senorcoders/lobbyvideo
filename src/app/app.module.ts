@@ -20,6 +20,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { ScenesComponent } from './scenes/scenes.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FaqComponent } from './faq/faq.component';
     PaymentComponent,
     ThanksComponent,
     ContactComponent,
-    FaqComponent
+    FaqComponent,
+    ScenesComponent
   ],
   imports: [
     BrowserModule,
