@@ -12,6 +12,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
   },
   { 
     path: 'register', component: RegisterComponent,
+
+  },
+  { 
+    path: 'about', component: AboutComponent,
 
   },
   { 

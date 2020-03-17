@@ -21,6 +21,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ScenesComponent } from './scenes/scenes.component';
     ThanksComponent,
     ContactComponent,
     FaqComponent,
-    ScenesComponent
+    ScenesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

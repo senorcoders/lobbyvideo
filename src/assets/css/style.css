@@ -25029,3 +25029,10 @@ a .h_head:hover {
      
     
 }
+
+@media screen and (min-width: 992px){
+  .ticket_item{
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
+}
