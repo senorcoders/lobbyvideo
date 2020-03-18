@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
 import { AboutComponent } from './about/about.component';
+import { PackagesComponent } from './packages/packages.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,11 @@ const routes: Routes = [
 
   },
   { 
-    path: 'register', component: RegisterComponent,
+    path: 'register', component: PackagesComponent,
+
+  },
+  { 
+    path: 'process-register', component: RegisterComponent,
 
   },
   { 

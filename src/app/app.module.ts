@@ -22,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
 import { AboutComponent } from './about/about.component';
+import { PackagesComponent } from './packages/packages.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     FaqComponent,
     ScenesComponent,
-    AboutComponent
+    AboutComponent,
+    PackagesComponent
   ],
   imports: [
     BrowserModule,
