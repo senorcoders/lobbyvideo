@@ -158,13 +158,24 @@ pay(amount) {
       this.wrongData = true;
     }
   
-    redirectHome() {
+    async redirectHome() {
       if (this.auth.isLogged()) {
-  
+        await this.sendNotification();
         this.router.navigate(["/thanks"]);
   
         this.isValid = false;
         this.loginText = 'REGISTER';
       }
     }
+
+
+    sendNotification(){
+      let data = {"name": this.registerForm.get('fullName').value, "template_name": "welcome", "package": this.package, "email": this.registerForm.get('email').value}
+      return new Promise((resolve, reject) => {
+        this.auth.save('email/send/welcome', data).subscribe(res => {
+          resolve();
+        }, error => reject())
+      });
+
+      }
 }
