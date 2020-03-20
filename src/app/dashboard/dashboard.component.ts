@@ -10,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class DashboardComponent implements OnInit {
   userID: any ;
   emailAdress:any;
+  currentVideo:any;
   constructor(private rest: AuthenticationService,
     private toastr: ToastrService) { }
 
@@ -30,6 +31,7 @@ export class DashboardComponent implements OnInit {
     this.rest.get('users/' +  this.userID['userid']).subscribe(data => {
       console.log('User', data);
       this.emailAdress = data['email'];
+      this.currentVideo = data['video'];
       resolve();
     })
   });
@@ -44,6 +46,7 @@ export class DashboardComponent implements OnInit {
     }
     this.rest.save('api/v1/setVideo', data).subscribe(res => {
       console.log("Setting video", res);
+      this.currentVideo = videoname;
       this.toastr.success('Sucess', 'Video has been added!');
 
     }, error => {

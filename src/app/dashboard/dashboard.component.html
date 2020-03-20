@@ -13,60 +13,67 @@
          
         </div>
         <div class="row portfolio_gallery mb-50" id="work-portfolio">
-            <div class="col-sm-6 portfolio_item br ux mb_50">
-                <div class="portfolio_img">
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_wide_screen_marine.mp4'">
                     <a href="http://lobbyvideoapi.senorcoders.com/videos/uscenes_wide_screen_marine.mp4" class="img_popup"><img class="img_rounded" src="../../assets/img/video1_placeholder.jpg" alt=""></a>
                     <div class="portfolio-description">
                         <a href="http://lobbyvideoapi.senorcoders.com/videos/uscenes_wide_screen_marine.mp4" target="_blank" class="portfolio-title">
                             <h3 class="f_500 f_size_20 f_p mt_30">Video 1</h3>
                         </a>
                         <div class="links">
-                            <button class="btn btn-primary" (click)="setVideo('uscenes_wide_screen_marine.mp4')">Set video as Primary</button>
+                           <span *ngIf="currentVideo=='uscenes_wide_screen_marine.mp4'">This is your current video</span> 
+                            <button [disabled]="currentVideo=='uscenes_wide_screen_marine.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_wide_screen_marine.mp4')">Set video as Primary</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-sm-6 portfolio_item br ux mb_50">
-                <div class="portfolio_img">
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='seahorse-sm.ogv'">
                     <a href="https://api.patientsoothe.com/images/seahorse-sm.ogv" class="img_popup"><img class="img_rounded" src="../../assets/img/video2.png" alt=""></a>
                     <div class="portfolio-description">
                         <a href="https://api.patientsoothe.com/images/seahorse-sm.ogv" target="_blank" class="portfolio-title">
                             <h3 class="f_500 f_size_20 f_p mt_30">Video 2</h3>
                         </a>
                         <div class="links">
-                            <button class="btn btn-primary" (click)="setVideo('seahorse-sm.ogvp4')">Set video as Primary</button>
+                            <span *ngIf="currentVideo=='seahorse-sm.ogv'">This is your current video</span> 
+
+                            <button  [disabled]="currentVideo=='seahorse-sm.ogv'" class="btn btn-primary" (click)="setVideo('seahorse-sm.ogv')">Set video as Primary</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-sm-6 portfolio_item br ux mb_50">
-                <div class="portfolio_img">
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='coral-sm.ogv'">
                     <a href="https://api.patientsoothe.com/images/coral-sm.ogv" class="img_popup"><img class="img_rounded" src="../../assets/img/video3.png" alt=""></a>
                     <div class="portfolio-description">
                         <a href="https://api.patientsoothe.com/images/coral-sm.ogv" target="_blank" class="portfolio-title">
                             <h3 class="f_500 f_size_20 f_p mt_30">Video 3</h3>
                         </a>
                         <div class="links">
-                            <button class="btn btn-primary" (click)="setVideo('coral-sm.ogv')">Set video as Primary</button>
+                            <span *ngIf="currentVideo=='coral-sm.ogv'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='coral-sm.ogv'" class="btn btn-primary" (click)="setVideo('coral-sm.ogv')">Set video as Primary</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-sm-6 portfolio_item br ux mb_50">
-                <div class="portfolio_img">
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='bottom-sm.ogv'">
                     <a href="https://api.patientsoothe.com/images/bottom-sm.ogv" class="img_popup"><img class="img_rounded" src="../../assets/img/video4.png" alt=""></a>
                     <div class="portfolio-description">
                         <a href="https://api.patientsoothe.com/images/bottom-sm.ogv" target="_blank" class="portfolio-title">
                             <h3 class="f_500 f_size_20 f_p mt_30">Video 4</h3>
                         </a>
                         <div class="links">
-                            <button class="btn btn-primary" (click)="setVideo('bottom-sm.ogv')">Set video as Primary</button>
+                            <span *ngIf="currentVideo=='bottom-sm.ogv'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='bottom-sm.ogv'" class="btn btn-primary" (click)="setVideo('bottom-sm.ogv')">Set video as Primary</button>
                         </div>
                     </div>
                 </div>
