@@ -19974,7 +19974,14 @@ a .h_head:hover {
 .pos_service_btn:hover i {
   padding-left: 15px;
 }
-
+.post_btn_cont{
+  position: absolute;
+  bottom: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pos_btn {
   font-size: 16px;
   color: #5f54fd;
@@ -19986,6 +19993,7 @@ a .h_head:hover {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  
 }
 
 .pos_btn:hover {
