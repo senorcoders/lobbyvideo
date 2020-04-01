@@ -14,6 +14,8 @@ import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
 import { AboutComponent } from './about/about.component';
 import { PackagesComponent } from './packages/packages.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
 
 
 const routes: Routes = [
@@ -72,8 +74,13 @@ const routes: Routes = [
   },
   {
     path: 'contact', component: ContactComponent,
-    canActivate: [LoggedinService]
 
+  },
+  {
+    path: 'privacy', component: PrivacyComponent,
+  },
+  {
+    path: 'terms', component: TermsComponent,
   }
 ];
 

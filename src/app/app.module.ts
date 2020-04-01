@@ -23,6 +23,8 @@ import { FaqComponent } from './faq/faq.component';
 import { ScenesComponent } from './scenes/scenes.component';
 import { AboutComponent } from './about/about.component';
 import { PackagesComponent } from './packages/packages.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { PackagesComponent } from './packages/packages.component';
     FaqComponent,
     ScenesComponent,
     AboutComponent,
-    PackagesComponent
+    PackagesComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
