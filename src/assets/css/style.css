@@ -1010,6 +1010,25 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*====================================================*/
 /*====================================================*/
 /*============== header_area css ==============*/
+.tiny-font {
+  font-size: 10px;
+  line-height: 11px;
+}
+.bestbuylogo {
+  margin-top: 5px;
+}
+
+section.portfolio_area.sec_pad.bg_color > div > div > div > p {
+  text-align: left;
+}
+
+.about-headshot {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  
+}
 .header_area {
   position: fixed;
   width: 100%;

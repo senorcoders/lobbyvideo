@@ -10,14 +10,14 @@
         <div class="container custom_container p0">
             <div class="sec_title text-center">
                 <h2 class="f_p f_size_30 l_height50 f_600 t_color2">Easy Pricing For any number of offices</h2>
-                <p class="f_400 f_size_16 l_height30 mb-0">Choose your monthly payment to take the load off of your shoulders of managing a live aquarium.            </p>
+                <p class="f_400 f_size_16 l_height30 mb-0">Choose your monthly payment to take the load off of your shoulders of managing a live aquarium. Pay for the year up front and recieve 2 months free.</p>
             </div>
             <ul class="nav nav-tabs price_tab price_tab_two mt_70" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active active_hover" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Billed monthly</a>
+                    <a class="nav-link active active_hover" id="home-tab" (click)="changePrices('monthly')" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Billed monthly</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Billed annually</a>
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" (click)="changePrices('annual')" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Billed annually</a>
                 </li>
             </ul>
             <div class="tab-content price_content price_content_two">
@@ -26,38 +26,38 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="price_item">
                                 <img src="img/price/one.png" alt="">
-                                <h5 class="f_p f_size_20 f_600 t_color2 mt_30">The Usual</h5>
-                                <div class="price f_700 f_size_40 t_color2">$39.00<sub class="f_size_16 f_400">/ mo</sub></div>
+                                <h5 class="f_p f_size_20 f_600 t_color2 mt_30">Basic</h5>
+                                <div class="price f_700 f_size_40 t_color2">${{ basicPrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>1 screen of 80” or less</li>
                                 </ul>
-                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'usual'}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
+                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'usual', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="price_item">
-                                <div class="tag"><span>Popular</span></div>
+                                <div class="tag"><span>Deluxe</span></div>
                                 <img src="img/price/two.png" alt="">
                                 <h5 class="f_p f_size_20 f_600 t_color2 mt_30">The Popular
                                 </h5>
-                                <div class="price f_700 f_size_40 t_color2">$59.00<sub class="f_size_16 f_400">/ mo</sub></div>
+                                <div class="price f_700 f_size_40 t_color2">${{ deluxePrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>Up to 3 screens of 80” or less</li>
                                   
                                 </ul>
-                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'popular'}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
+                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'popular', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="price_item">
                                 <img src="img/price/three.png" alt="">
-                                <h5 class="f_p f_size_20 f_600 t_color2 mt_30">Extravagant</h5>
-                                <div class="price f_700 f_size_40 t_color2">$79.00<sub class="f_size_16 f_400">/ mo</sub></div>
+                                <h5 class="f_p f_size_20 f_600 t_color2 mt_30">Super Plus</h5>
+                                <div class="price f_700 f_size_40 t_color2">${{ superPrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>Up to 5 screens of 80” or less</li>
                                     
                                 </ul>
-                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'extravagant'}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
+                                <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'extravagant', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
                             </div>
                         </div>
                     </div>

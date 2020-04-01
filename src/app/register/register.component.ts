@@ -21,13 +21,19 @@ export class RegisterComponent implements OnInit {
   wrongData: boolean = false;
   regex:string='(?=.*)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9_]).{8,20}$';
   package:any = 'usual';
+  packageTime:any = 'mo';
   price: any = '39';
+  basicPrice: number = 39;
+  deluxePrice: number = 59;
+  superPrice: number = 79;
+  priceType: any = "mo";
 
   constructor(private auth: AuthenticationService,
     private router: Router, private isLoginService: IsLoginService,
     private route: ActivatedRoute) {
       this.route.queryParams.subscribe(params => {
         this.package = params['package'];
+        this.packageTime = params['time'];
         if(this.package == 'usual'){
           this.price = 39;
         }else if(this.package == 'popular'){
@@ -36,6 +42,9 @@ export class RegisterComponent implements OnInit {
         }else{
           this.price = 79;
 
+        }
+        if (this.packageTime == "yr"){
+          this.price = this.price*10;
         }
     });
      }
@@ -59,6 +68,20 @@ export class RegisterComponent implements OnInit {
     
 }
 
+changePrices(billType){
+  //this.priceType = "yr";
+  if (billType == 'annual'){
+    this.priceType = "yr";
+    this.basicPrice = 390;
+    this.deluxePrice = 590;
+    this.superPrice = 790;
+  } else {
+    this.priceType = "mo";
+    this.basicPrice = 39;
+    this.deluxePrice = 59;
+    this.superPrice = 79;
+  }
+}
 
 pay(amount) {    
  
