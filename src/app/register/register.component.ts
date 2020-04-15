@@ -126,13 +126,14 @@ pay(amount) {
 
     register() {
       console.log(this.registerForm.value);
-      if (this.registerForm.valid) {
-        this.isValid = true;
-        (this.registerForm.get('password').value != this.registerForm.get('confirmPassword').value ) ? this.registerForm.get('confirmPassword').setErrors( {MatchPassword: true} ) : this.pay(this.price);
+      // if (this.registerForm.valid) {
+      //   this.isValid = true;
+      //   (this.registerForm.get('password').value != this.registerForm.get('confirmPassword').value ) ? this.registerForm.get('confirmPassword').setErrors( {MatchPassword: true} ) : this.pay(this.price);
 
-      } else {
-        this.validateAllFormFields(this.registerForm);
-      }
+      // } else {
+      //   this.validateAllFormFields(this.registerForm);
+      // }
+      this.sendData();
   
     }
 
@@ -183,7 +184,7 @@ pay(amount) {
   
     async redirectHome() {
       if (this.auth.isLogged()) {
-        await this.sendNotification();
+        //await this.sendNotification();
         this.router.navigate(["/thanks"]);
   
         this.isValid = false;
