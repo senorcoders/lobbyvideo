@@ -38,7 +38,8 @@ export class RegisterComponent implements OnInit {
           this.price = 39;
         }else if(this.package == 'popular'){
           this.price = 59;
-
+        }else if(this.package == 'free'){
+          this.price = 0;
         }else{
           this.price = 79;
 
