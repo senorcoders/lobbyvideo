@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { PackagesComponent } from './packages/packages.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
+import { UnloggedinService } from './unloggedin.service';
 
 
 const routes: Routes = [
@@ -37,10 +38,14 @@ const routes: Routes = [
   },
   { 
     path: 'register', component: PackagesComponent,
+    canActivate: [UnloggedinService]
+
 
   },
   { 
     path: 'process-register', component: RegisterComponent,
+    canActivate: [UnloggedinService]
+
 
   },
   { 
