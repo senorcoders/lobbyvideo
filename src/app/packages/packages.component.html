@@ -30,6 +30,8 @@
                                 <div class="price f_700 f_size_40 t_color2">${{ basicPrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>1 screen of 80” or less</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Only pay for 10 months</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Get a Free Amazon Fire Stick <img  alt="" height="20px" src="../../assets/img/amazonfirestick.png"></li>
                                 </ul>
                                 <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'usual', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
                             </div>
@@ -43,6 +45,8 @@
                                 <div class="price f_700 f_size_40 t_color2">${{ deluxePrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>Up to 3 screens of 80” or less</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Only pay for 10 months</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Get a Free Amazon Fire Stick <img  alt="" height="20px" src="../../assets/img/amazonfirestick.png"></li>
                                   
                                 </ul>
                                 <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'popular', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
@@ -55,6 +59,8 @@
                                 <div class="price f_700 f_size_40 t_color2">${{ superPrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
                                     <li><i class="ti-check"></i>Up to 5 screens of 80” or less</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Only pay for 10 months</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Get a Free Amazon Fire Stick <img  alt="" height="20px" src="../../assets/img/amazonfirestick.png"></li>
                                     
                                 </ul>
                                 <button  [routerLink]="['/process-register']"  [queryParams]="{package: 'extravagant', time: priceType}" queryParamsHandling="merge" class="price_btn btn_hover">Start Today</button>
