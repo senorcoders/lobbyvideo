@@ -17,6 +17,7 @@ import { PackagesComponent } from './packages/packages.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { UnloggedinService } from './unloggedin.service';
+import { ProductsComponent } from './products/products.component';
 
 
 const routes: Routes = [
@@ -86,6 +87,9 @@ const routes: Routes = [
   },
   {
     path: 'terms', component: TermsComponent,
+  },
+  {
+    path: 'products', component: ProductsComponent,
   }
 ];
 

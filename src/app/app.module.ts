@@ -25,6 +25,7 @@ import { AboutComponent } from './about/about.component';
 import { PackagesComponent } from './packages/packages.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TermsComponent } from './terms/terms.component';
     AboutComponent,
     PackagesComponent,
     PrivacyComponent,
-    TermsComponent
+    TermsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
