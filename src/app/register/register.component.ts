@@ -185,7 +185,7 @@ pay(amount) {
   
     async redirectHome() {
       if (this.auth.isLogged()) {
-        //await this.sendNotification();
+        this.sendNotification();
         this.router.navigate(["/thanks"]);
   
         this.isValid = false;
