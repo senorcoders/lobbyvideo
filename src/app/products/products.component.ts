@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
   }
 
   getProducts(){
-    this.httpClient.get('http://159.65.226.13:8100/products').subscribe(data => {
+    this.httpClient.get('https://bestbuy.patientsoothe.com/products').subscribe(data => {
       console.log("products", data);
       this.products = data['products'];
     })
