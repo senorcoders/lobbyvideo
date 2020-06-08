@@ -18,9 +18,10 @@
                         <a [href]="product.url" class="img_popup"><img class="img_rounded" [src]="product.image" alt="" style="width: auto; height: 140px;"></a>
                         <div class="portfolio-description">
                             <a [href]="product.url" target="_blank" class="portfolio-title">
-                                <h3 class="f_500 f_size_20 f_p mt_30">{{product.name}}</h3>
+                                <h3 class="f_500 f_size_20 f_p mt_30 text-left">{{product.name}}</h3>
+                                <h4 class="text-left" style="    color: #5f54fd;">${{product.salePrice}}</h4>
                             </a>
-                            <div class="links">
+                            <div class="links text-left">
                                 <a [href]="product.addToCartUrl" class="add-to-cart" target="_blank">Add to Cart <i class="fa fa-cart-plus"></i> </a>
                             </div>
                         </div>
