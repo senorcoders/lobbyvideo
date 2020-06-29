@@ -26,6 +26,7 @@ import { PackagesComponent } from './packages/packages.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { ProductsComponent } from './products/products.component';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,9 @@ import { ProductsComponent } from './products/products.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot() // ToastrModule added
+    ToastrModule.forRoot(), // ToastrModule added,
+    RecaptchaModule,
+    RecaptchaFormsModule
 
     ],
   providers: [{

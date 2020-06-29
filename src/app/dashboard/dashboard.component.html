@@ -9,10 +9,7 @@
 </section>
 <section class="portfolio_area sec_pad bg_color">
     <div class="container">
-        <div class="row">
-         
-        </div>
-        <div class="row portfolio_gallery mb-50" id="work-portfolio">
+        <div class="row" style="margin-bottom: 50px;">
             <div class="col-sm-12 text-center">
                 <h4>Checkout Our Featured Products Available</h4>
                 <div>
@@ -21,6 +18,9 @@
                 <br>
                 <a routerLink="/products" class="text-center pos_btn">Shop Now</a>
             </div>
+        </div>
+        <div class="row portfolio_gallery" id="work-portfolio">
+           
             <div class="col-sm-3 portfolio_item br ux mb_50">
                 <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_coral_garden_hd_5-1.mp4'">
                     <a href="http://videos.patientsoothe.com/uscenes_coral_garden_hd_5-1.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/4k-aquarium.jpeg" alt=""></a>
@@ -71,7 +71,154 @@
             </div>
 
 
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/eels-aquarium-video-in-4k.jpeg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Aztec Eels	</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4'">This is your current video</span> 
 
+                            <button [disabled]="currentVideo=='uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_aztec_eels_uhd_5-1_h-265_8bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/blue-aquarium-UHD-big-fish.jpeg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Deep Sea Aquarium</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_deep_sea_aquarium_uhd_5-1_h-265_8bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/finding-dory-aquarium-video-for-children.jpg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Finding Dorys Aquarium		</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_finding_dorys_aquarium_uhd_5-1_9bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_marine_aquarium_uhd_5-1_10bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_marine_aquarium_uhd_5-1_10bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/marine-aquarium-screensaver.jpg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_marine_aquarium_uhd_5-1_10bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Marine Aquarium</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_marine_aquarium_uhd_5-1_10bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_marine_aquarium_uhd_5-1_10bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_marine_aquarium_uhd_5-1_10bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_pink_coral_uhd_5-1_10bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_pink_coral_uhd_5-1_10bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/aquarium-video-for-the-freame-tv.jpg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_pink_coral_uhd_5-1_10bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Pink Coral</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_pink_coral_uhd_5-1_10bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_pink_coral_uhd_5-1_10bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_pink_coral_uhd_5-1_10bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_seahorse_aquarium_uhd_5-1.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_seahorse_aquarium_uhd_5-1.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/seahorses-screensaver-video.jpg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_seahorse_aquarium_uhd_5-1.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Seahorse Aquarium	</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_seahorse_aquarium_uhd_5-1.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_seahorse_aquarium_uhd_5-1.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_seahorse_aquarium_uhd_5-1.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/4k-underwater-cave-video.jpeg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">The Cavern</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_the_cavern_uhd_5-1_h-265_8bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_virtual_aquarium_uhd_10bit__5-1.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_virtual_aquarium_uhd_10bit__5-1.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/virtual-aquarium-4K.jpg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_virtual_aquarium_uhd_10bit__5-1.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Virtual Aquarium		</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_virtual_aquarium_uhd_10bit__5-1.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_virtual_aquarium_uhd_10bit__5-1.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_virtual_aquarium_uhd_10bit__5-1.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 portfolio_item br ux mb_50">
+                <div class="portfolio_img" [class.selected]="currentVideo=='uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4'">
+                    <a href="http://videos.patientsoothe.com/uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4" class="img_popup"><img class="img_rounded" src="../../assets/scenes/4k-zen-video-fish-tank.jpeg" alt=""></a>
+                    <div class="portfolio-description">
+                        <a href="http://videos.patientsoothe.com/uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4" target="_blank" class="portfolio-title">
+                            <h3 class="f_500 f_size_20 f_p mt_30">Virtual Aquarium		</h3>
+                        </a>
+                        <div class="links">
+                            <span *ngIf="currentVideo=='uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4'">This is your current video</span> 
+
+                            <button [disabled]="currentVideo=='uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4'" class="btn btn-primary" (click)="setVideo('uscenes_zen_aquarium_uhd_5-1_h-265_8bit.mp4')">Set video as Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
            
         </div>
