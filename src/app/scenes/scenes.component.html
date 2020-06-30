@@ -12,117 +12,12 @@
             <div data-filter="*" class="work_portfolio_item active">See All</div>
            
         </div>
-        <div class="row portfolio_gallery mb_30" id="work-portfolio">
-            <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-                <div class="portfolio_img">
-                    <img src="../../assets/img/video1_placeholder.jpg" alt="">
-                    <div class="hover_content h_content_two">
-                        <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-                
-                    </div>
-                </div>
+        <div class="lightbox-gallery">
+            <div *ngFor="let image of galleryImages; let i=index">
+                <img [src]="image.thumb" (click)="open(i)" width="200px" />
+              </div>
             </div>
-
-            <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-                <div class="portfolio_img">
-                    <img src="../../assets/img/video2.png" alt="">
-                    <div class="hover_content h_content_two">
-                        <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-                
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-                <div class="portfolio_img">
-                    <img src="../../assets/img/video3.png" alt="">
-                    <div class="hover_content h_content_two">
-                        <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-                
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-                <div class="portfolio_img">
-                    <img src="../../assets/img/video4.png" alt="">
-                    <div class="hover_content h_content_two">
-                        <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-                
-                    </div>
-                </div>
-            </div>
-           <!-- Start 2nd row -->
-           <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/img/aquarium-1.jpg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/img/aquarium-2.jpg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/img/aquarium-3.jpg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/img/aquarium-4.jpg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/scenes/4k-aquarium.jpeg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/scenes/4k-fishes-tv-wallpaper.jpeg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 portfolio_item br ux mb-30">
-            <div class="portfolio_img">
-                <img src="../../assets/scenes/relaxing-jellyfish-video.jpg" alt="">
-                <div class="hover_content h_content_two">
-                    <a href="#" class="img_popup leaf"><i class="ti-plus"></i></a>
-            
-                </div>
-            </div>
-        </div>
-        </div>
+       
     </div>
 </section>
+

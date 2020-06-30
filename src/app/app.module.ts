@@ -27,6 +27,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { ProductsComponent } from './products/products.component';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     BrowserAnimationsModule,
     ToastrModule.forRoot(), // ToastrModule added,
     RecaptchaModule,
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    LightboxModule
 
     ],
   providers: [{

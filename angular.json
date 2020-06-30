@@ -44,7 +44,8 @@
               "src/assets/css/style.css",
               "src/assets/css/responsive.css",
               "src/assets/css/rtl.css",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "./node_modules/ngx-lightbox/lightbox.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.2.1.min.js",
