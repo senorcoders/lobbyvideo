@@ -37,11 +37,11 @@ export class RegisterComponent implements OnInit {
         if(this.package == 'usual'){
           this.price = 39;
         }else if(this.package == 'popular'){
-          this.price = 59;
+          this.price = 39;
         }else if(this.package == 'free'){
           this.price = 0;
         }else{
-          this.price = 79;
+          this.price = 39;
 
         }
         if (this.packageTime == "yr"){

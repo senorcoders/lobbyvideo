@@ -14,7 +14,7 @@
             </div>
             <ul class="nav nav-tabs price_tab price_tab_two mt_70" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active active_hover" id="home-tab" (click)="changePrices('monthly')" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">1 Tv Prices</a>
+                    <a class="nav-link active active_hover" id="home-tab" (click)="changePrices('monthly')" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">1 Tv Price</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" (click)="changePrices('annual')" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Multipe TV's</a>
@@ -44,7 +44,8 @@
                                 </h5>
                                 <div class="price f_700 f_size_40 t_color2">${{ deluxePrice }}.00<sub class="f_size_16 f_400">/ {{ priceType }}</sub></div>
                                 <ul class="list-unstyled p_list">
-                                    <li><i class="ti-check"></i>Up to 3 screens of 80” or less</li>
+                                    <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Up to 3 screens of 80” or less</li>
+                                    <li *ngIf="priceType == 'mo'"><i class="ti-check"></i>Includes 1 Screen of 80" or less</li>
                                     <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Only pay for 10 months</li>
                                     <li *ngIf="priceType == 'yr'"><i class="ti-check"></i>Get a Free Amazon Fire Stick <img  alt="" height="20px" src="../../assets/img/amazonfirestick.png"></li>
                                   
